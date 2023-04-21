@@ -4,29 +4,33 @@
 
 ## Data Storage in Main
 ``` cpp
-int choice; //user choice for menu driven program
+Scooter myScooter() //object
 ```
-## Function Design
+## Function Class Design
 ``` cpp
-//add item to .dat file
-void addItem();
+// Default constructor
+Scooter::Scooter()
 
-//print info of .dat file
-void printInfo();
+// Second constructor
+Scooter::Scooter(string brand, float max_spd)
 
-//purchase item from .dat file
-void purchaseItem();
+// Accessor functions
+string Scooter::getType()
+float Scooter::getMaxSpeed()
+float Scooter::getCurrentSpeed()
 
-//calc total of .dat file
-void calcTotal();
+// Mutator functions
+void Scooter::setType(string brand)
+void Scooter::setMaxSpeed(float max_spd)
+void Scooter::setCurrentSpeed(float curr_spd)
+void Scooter::speedUp()
+void Scooter::slowDown()
 ```
 ## Time Estimates
 |  | Estimated Time    | Actual Time    |
 | :---:   | :---: | :---: |
 | Program Design | 30   | 40   |
-| addItem |  15  | 15   |
-| printInfo | 10   | 15   |
-| purchaseItem | 20   | 30   |
-| calcTotal | 20   | 15   |
+| Class Design |  30  | 45   |
+| main | 10   | 10   |
 | Program Test | 5   | 5   |
-| Total Time | 100   | 120   |
+| Total Time | 75   | 100   |
